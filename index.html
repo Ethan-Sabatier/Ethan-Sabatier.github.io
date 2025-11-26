@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Ethan SABATIER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio d'Ethan SABATIER, étudiant en Réseaux et Télécommunications, parcours cybersécurité.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="header__inner">
+        <a href="#a-propos" class="header__brand">
+            <span class="header__logo">ES</span>
+            <span class="header__name">Ethan SABATIER</span>
+        </a>
+
+        <button class="header__toggle" aria-label="Ouvrir le menu">
+            <span class="header__bar"></span>
+            <span class="header__bar"></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a href="#a-propos" class="nav__link nav__link--active">A propos</a></li>
+                <li><a href="#formations" class="nav__link">Formations</a></li>
+                <li><a href="#experiences" class="nav__link">Expériences</a></li>
+                <li><a href="#competences" class="nav__link">Compétences</a></li>
+                <li><a href="#projets" class="nav__link">Projets</a></li>
+                <li><a href="#divers" class="nav__link">Divers</a></li>
+                <li><a href="#cv" class="nav__link">CV</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- A PROPOS -->
+    <section id="a-propos" class="section section--hero">
+        <div class="container hero">
+            <div class="hero__text">
+                <h1 class="hero__title"><span class="accent">Ethan SABATIER</span></h1>
+                <p class="hero__eyebrow">Etudiant en Réseaux et Télécommunications</p>
+                <p class="hero__subtitle">
+                    Ma formation en Réseaux et Télécommunications à l’IUT Clermont Auvergne s’appuie sur beaucoup de travaux pratiques et de projets concrets.
+                    En parallèle, mon emploi étudiant chez Fresh et mon Brevet d’Initiation Aéronautique m’ont appris à gérer des contraintes horaires fortes, à rester réactif en situation de stress et à garder un haut niveau d’exigence dans ce que je fais.
+                    Je recherche un <u>stage</u> et une alternance (année prochaine) qui me permettront de mettre à profit cette rigueur dans des projets réseau et cybersécurité réels. 
+                </p>
+                <div class="hero__actions">
+                    <a href="#projets" class="btn btn--primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn--ghost">Me contacter</a>
+                </div>
+                <ul class="hero__infos">
+                    <li>Basé à Montbrison(42) / Clermont-Ferrand</li>
+                    <li>Recherche un stage de 10 semaines (Avril à Juin) en 2026</li>
+                    <li>Centres d'intérêt réseau, cybersécurité, musique et ski.</li>
+                </ul>
+            </div>
+
+            <aside class="hero__card">
+                <div class="hero__avatar-wrapper">
+                    <!-- Remplace la source par ta vraie photo -->
+                    <img src="images/Snapchat-942251904.jpg" alt="Photo de Ethan SABATIER" class="hero__avatar">
+                </div>
+                <h2 class="hero__name">Ethan SABATIER</h2>
+                <p class="hero__role">BUT Réseaux et Télécommunications, parcours cybersécurité</p>
+                <div class="hero__contact">
+                    <a href="mailto:Ethan.SABATIER@etu.uca.fr" class="hero__contact-item">
+                        1 - Ethan.SABATIER@etu.uca.fr
+                        <br>
+                        2 - sabatierethan698@gmail.com
+                    </a>
+                    <a href="tel:+33652857756" class="hero__contact-item">
+                        +33 6 52 85 77 56
+                    </a>
+                    <a href="https://www.linkedin.com/in/ethan-sabatier-065756345" target="_blank" rel="noreferrer" class="hero__contact-item hero__contact-item--linked">
+                        Mon LinkedIn
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- FORMATIONS -->
+    <section id="formations" class="section">
+        <div class="container">
+            <header class="section__header">
+                <h2 class="section__title">Formations</h2>
+                <p class="section__subtitle">
+                    Un parcours orienté vers les réseaux, les télécommunications et la cybersécurité.
+                </p>
+            </header>
+
+            <div class="grid grid--two">
+                <article class="card card--education">
+                    <div class="card__image-wrapper">
+                        <!-- Remplace les images par les logos de tes établissements -->
+                        <img src="images/iut.png" alt="IUT Clermont Auvergne" class="card__image">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">BUT Réseaux et Télécommunications</h3>
+                        <p class="card__meta">IUT Clermont Auvergne, 2024 – 2026</p>
+                        <p class="card__text">
+                            Parcours cybersécurité. Apprentissage de l'administration des réseaux, des services
+                            d'infrastructure, des protocoles d'acheminement, de programmation et des bonnes pratiques de sécurité
+                            informatique au travers de nombreux travaux pratiques et projets.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card card--education">
+                    <div class="card__image-wrapper">
+                        <img src="images/lycee.jpg" alt="Lycée général" class="card__image">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Baccalauréat général</h3>
+                        <p class="card__meta">Lycée de Beauregard à Montbrison, 2021 - 2024</p>
+                        <p class="card__text">
+                            Série générale, spécialités Mathématiques et Physique Chimie.
+                            Base scientifique solide, culture générale élargie et travail personnel régulier qui m'ont
+                            permis de développer rigueur, autonomie et capacités d'analyse.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section id="experiences" class="section section--slider-dark">
+    <div class="container">
+        <header class="section__header">
+            <h2 class="section__title">Expériences professionnelles</h2>
+            <p class="section__subtitle">
+                Des expériences qui m'ont permis de développer discipline, autonomie et conscience professionnelle.
+            </p>
+        </header>
+
+        <div class="projects">
+            <div class="projects__fade projects__fade--left"></div>
+
+            <button class="projects__arrow projects__arrow--prev" aria-label="Expérience précédente">
+                ‹
+            </button>
+
+            <div class="projects__viewport">
+                <div class="projects__track">
+                    <!-- EXPÉRIENCE 1 -->
+                    <article class="card projects__card">
+                        <div class="card__body">
+                            <h3 class="card__title">Employé polyvalent, Fresh à Montbrison</h3>
+                            <p class="card__tag">JOB ÉTUDIANT · FRAIS / FRUITS ET LÉGUMES</p>
+
+                            <h4 class="card__subtitle">Objectif</h4>
+                            <p class="card__text">
+                                Découvrir le monde du travail, gagner en autonomie et financer mon permis
+                                tout en gérant une forte contrainte horaire.
+                            </p>
+
+                            <h4 class="card__subtitle">Déroulé</h4>
+                            <p class="card__text">
+                                Je suis actuellement employé au sein de la société Fresh à Montbrison. C'est une filiale de Grand Frais et qui vend donc des fruits et légumes frais. Je travaille 12H les week-ends et commence tôt les dimanches à 6 heures. A ce poste, j'effectue plusieurs tâches. 70% du temps, je suis à la caisse et ce sont les caissiers qui sont chargés de peser les produits. Il faut donc pour cela que nous les connaissions tous. Je suis donc obligé de savoir reconnaître rapidement tout type de produit exotique et commun tel que le Mangoustan, l'Igname ou encore le Physalis. Mais ce qui est sûrement le plus dur, c'est de reconnaître les différents type de pommes, de poires ou de champignons par exemple. De plus, les produits changent régulièrement suivant les saisons, c'est pour cela qu'il faut une bonne mémoire et adaptabilité, car en plus des produits, il y a aussi leurs codes à retenir. Ces codes sont constitués de 6 chiffres qu'on doit retenir et taper sur la caisse pour retrouver le produit. Par exemple, si un sac de banane passe à la caisse, on doit taper 530304 ou pour les champignons brun 85901. L'autre partie de mon temps, nous nous coordonnons pour tourner et partir de la caisse afin d'aller dans les frigos et de les ranger, les nettoyer et surtout de ramener les articles en rayons ainsi que faire du "Facing" qui consiste à "ranger" les rayon pour avancer les produits, les arranger et les rendre visibles. Le dimanche matin, je commence plus tôt car je dois pointer les palettes de livraison et ses cartons pour vérifier que rien ne manque et out mettre en rayons avant l'ouverture. Me lever tous les dimanches à 6 heures était difficile au début, car la fatigue prenait les dessus mais après m'être habitué et avoir planifié de manière plus structuré mon emploi du temps, j'ai pu surmonter cela.
+                            </p>
+
+                            <h4 class="card__subtitle">Résultat</h4>
+                            <p class="card__text">
+                                Développement d'une grande discipline, d'une bonne gestion de la fatigue,
+                                et confirmation de ma capacité à travailler efficacement en équipe
+                                sous pression.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <article class="card projects__card">
+                        <div class="card__body">
+                            <h3 class="card__title">Brevet d'initiation aéronautique (BIA)</h3>
+                            <p class="card__tag">DIPLÔME · AÉRONAUTIQUE</p>
+
+                            <h4 class="card__subtitle">Objectif</h4>
+                            <p class="card__text">
+                                Approfondir mes connaissances en aéronautique, découvrir le monde de l’aviation
+                                et obtenir le diplôme du BIA, avec l’option anglais pour faciliter de futures
+                                démarches dans ce domaine.
+                            </p>
+
+                            <h4 class="card__subtitle">Déroulé</h4>
+                            <p class="card__text">
+                                La formation s’est déroulée en deux parties. D’abord une quarantaine d’heures de
+                                théorie en petit groupe avec un instructeur de vol. Nous avons étudié la
+                                météorologie, l’aérodynamique et les principes de vol, les aéronefs et engins
+                                spatiaux, la navigation, la réglementation et la sécurité des vols, ainsi que
+                                l’histoire et la culture aéronautique. J’ai aussi choisi l’option anglais.
+                                <br><br>
+                                Ensuite, une partie pratique en vol avec un instructeur. J’ai réalisé plusieurs
+                                vols d’environ deux heures, comprenant décollage, tenue de trajectoire, gestion
+                                de la vitesse et de l’altitude, puis atterrissage, tout en surveillant les
+                                instruments et en respectant les consignes de sécurité.
+                            </p>
+
+                            <h4 class="card__subtitle">Résultat</h4>
+                            <p class="card__text">
+                                J’ai obtenu le BIA avec mention bien et réussi la partie anglais. Cette expérience
+                                m’a permis de gagner en sang-froid, en réactivité et en sens des responsabilités,
+                                qualités que je réutilise dans mes études et mes projets techniques.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <!-- Tu peux ajouter une deuxième expérience ici si tu en as une autre -->
+                </div>
+            </div>
+
+            <button class="projects__arrow projects__arrow--next" aria-label="Expérience suivante">
+                ›
+            </button>
+
+            <div class="projects__fade projects__fade--right"></div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- COMPETENCES -->
+    <section id="competences" class="section">
+        <div class="container">
+            <header class="section__header">
+                <h2 class="section__title">Compétences</h2>
+                <p class="section__subtitle">
+                    Compétences techniques et qualités humaines acquises au travers de ma formation et de mes projets.
+                </p>
+            </header>
+
+            <div class="skills">
+                <article class="skills__group">
+                    <h3 class="skills__title">Compétences techniques</h3>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <h4>Administration réseau</h4>
+                            <p>
+                                Configuration de routeurs et commutateurs, VLAN, routage statique et dynamique, services DHCP et DNS, supervision basique.
+                                Grâce à mes TP et à un projet de maquette sur Packet Tracer, je suis capable de monter et faire fonctionner un réseau d’entreprise de taille moyenne, tout en apprenant à traquer les erreurs de configuration qui bloquent parfois toute l’architecture.
+                            </p>
+                            <a href="#projets" class="skills__link">Voir le projet de maquette réseau</a>
+                        </li>
+                        <li class="skills__item">
+                            <h4>Cybersécurité</h4>
+                            <p>
+                                Sensibilisation aux bonnes pratiques, configuration de services sécurisés, découverte
+                                des tests d'intrusion en environnement encadré, gestion des droits et durcissement de
+                                systèmes.
+                            </p>
+                            <a href="#projets" class="skills__link">Voir mes projets sécurité</a>
+                        </li>
+                        <li class="skills__item">
+                            <h4>Programmation</h4>
+                            <p>
+                                Bonnes bases en programmation avec Java, Python et scripts shell. Utilisation pour automatiser des tâches, traiter des données et créer de petites applications.
+                                J’ai par exemple développé un site web de jeu d’anniversaire complet avec HTML, CSS, JavaScript et un serveur Python empaqueté en .exe pour le rendre simple à lancer.
+                            </p>
+                            <a href="#projets" class="skills__link">Voir les projets de scripts et développement</a>
+                        </li>
+                        <li class="skills__item">
+                            <h4>Télécommunications</h4>
+                            <p>
+                                Compréhension des principes de propagation, études de signaux, premières manipulations
+                                d'outils de mesure et interprétation de résultats expérimentaux.
+                            </p>
+                            <a href="#projets" class="skills__link">Voir le projet expérimental antennes</a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="skills__group">
+                    <h3 class="skills__title">Qualités personnelles</h3>
+                    <ul class="skills__chips">
+                        <li>Discipliné</li>
+                        <li>Réactif</li>
+                        <li>Esprit d'équipe</li>
+                        <li>Curieux</li>
+                        <li>Autonome</li>
+                        <li>Organisation du travail</li>
+                    </ul>
+                    <p class="skills__text">
+                        Ces qualités se sont construites au fil de mes expériences. La discipline vient notamment de ma
+                        préparation au baccalauréat, où j’ai mis en place un planning de travail strict avec plusieurs
+                        heures de mathématiques et de physique par jour pour rattraper mon retard. Elle a ensuite été
+                        renforcée par mon emploi chez Fresh à Montbrison, où je me lève tous les dimanches à 6 heures,
+                        sans retard, tout en gérant en parallèle ma charge de travail à l’IUT.
+                        <br><br>
+                        Ma réactivité et mon sang froid se sont développés lors du passage du Brevet d’Initiation
+                        Aéronautique, en étant aux commandes d’un avion sous la supervision d’un instructeur, mais aussi
+                        dans des situations du quotidien où il faut garder le contrôle face à des imprévus. Enfin,
+                        l’autonomie et la curiosité se sont exprimées dans mes projets personnels, comme la création de
+                        ce portfolio, d’un site web d’anniversaire complet ou encore la mise en place d’un backend en
+                        Node.js et MongoDB pour répondre à un besoin d’entreprise fictive.
+                    </p>
+
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section section--slider-dark">
+    <div class="container">
+        <header class="section__header">
+            <h2 class="section__title">Projets</h2>
+            <p class="section__subtitle">
+                Quelques projets marquants réalisés durant ma formation ou en autonomie.
+            </p>
+        </header>
+
+        <div class="projects">
+            <div class="projects__fade projects__fade--left"></div>
+
+            <button class="projects__arrow projects__arrow--prev" aria-label="Projet précédent">
+                ‹
+            </button>
+
+            <div class="projects__viewport">
+                <div class="projects__track">
+                    <!-- CARTE PROJET 1 -->
+                    <article class="card projects__card">
+                        <div class="card__image-wrapper">
+                            <img src="images/pkt.png"
+                                alt="Maquette réseau d'entreprise sur Packet Tracer"
+                                class="card__image">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Projet réseau pour petite entreprise</h3>
+                            <p class="card__tag">RÉSEAUX · PACKET TRACER</p>
+
+                            <h4 class="card__subtitle">Objectif</h4>
+                            <p class="card__text">
+                                Concevoir et configurer un réseau d’entreprise de taille moyenne sur Cisco
+                                Packet Tracer dans un temps limité, en intégrant postes fixes, postes mobiles
+                                et services réseau essentiels.
+                            </p>
+
+                            <h4 class="card__subtitle">Déroulé</h4>
+                            <p class="card__text">
+                                J’ai commencé par placer les postes utilisateurs, les points d’accès WiFi
+                                pour téléphones et portables, puis un switch central. J’ai ajouté un serveur
+                                DHCP pour l’attribution automatique des adresses IP et un serveur DNS pour
+                                résoudre des noms de sites. Le routeur a ensuite été configuré avec la
+                                bonne adresse de passerelle. Enfin, j’ai testé la connectivité avec la
+                                commande <code>ping</code> et corrigé les erreurs de configuration.
+                            </p>
+
+                            <h4 class="card__subtitle">Résultat</h4>
+                            <p class="card__text">
+                                Le réseau était entièrement fonctionnel. Ce projet m’a appris la minutie
+                                nécessaire en configuration réseau et l’importance du diagnostic lorsque
+                                la moindre erreur bloque tout le fonctionnement.
+                            </p>
+
+                            <!-- Tu pourras mettre un vrai lien plus tard -->
+                            <!--<a href="#" class="card__link">Voir le compte rendu du projet</a>-->
+                        </div>
+                    </article>
+
+                    <!-- PROJET 2 : Portfolio -->
+                    <article class="card projects__card">
+                        <div class="card__image-wrapper">
+                            <img src="images/html.png"
+                                alt="Portfolio web en HTML, CSS et JavaScript"
+                                class="card__image">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Création de mon portfolio web</h3>
+                            <p class="card__tag">DÉVELOPPEMENT WEB · HTML CSS JS</p>
+
+                            <h4 class="card__subtitle">Objectif</h4>
+                            <p class="card__text">
+                                Concevoir un portfolio complet, responsive et agréable à lire afin de
+                                présenter mon parcours, mes compétences et mes projets, en autonomie.
+                            </p>
+
+                            <h4 class="card__subtitle">Déroulé</h4>
+                            <p class="card__text">
+                                J’ai d’abord structuré les pages en HTML, puis travaillé la mise en forme
+                                en CSS. J’ai abandonné les unités en pixels pour utiliser des unités
+                                relatives comme <code>vh</code> et <code>vw</code>, afin d’adapter
+                                l’affichage aux différentes tailles d’écran. J’ai aussi intégré du
+                                JavaScript pour gérer la navigation entre sections et simuler des
+                                fenêtres modales plutôt que créer plusieurs fichiers HTML.
+                            </p>
+
+                            <h4 class="card__subtitle">Résultat</h4>
+                            <p class="card__text">
+                                Le portfolio a renforcé mes compétences en HTML, CSS et JavaScript et
+                                montre concrètement ma capacité à mener un projet web de bout en bout.
+                            </p>
+
+                            <!--<a href="#" class="card__link">Voir la version en ligne</a>-->
+                        </div>
+                    </article>
+
+                    <!-- PROJET 3 : Télécommunications -->
+                    <article class="card projects__card">
+                        <div class="card__image-wrapper">
+                            <img src="images/mat.png"
+                                alt="Étude de signaux et canal radio sous MATLAB"
+                                class="card__image">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Projet Télécommunications et MATLAB</h3>
+                            <p class="card__tag">TÉLÉCOMS · MATLAB</p>
+
+                            <h4 class="card__subtitle">Objectif</h4>
+                            <p class="card__text">
+                                Mettre en pratique des notions de signaux, d’intégration numérique et
+                                d’étude de canal radio tout en se familiarisant avec MATLAB et ses outils
+                                de simulation.
+                            </p>
+
+                            <h4 class="card__subtitle">Déroulé</h4>
+                            <p class="card__text">
+                                Le projet s’est déroulé en plusieurs parties. Nous avons tracé et manipulé
+                                des signaux, puis comparé différentes méthodes de calcul d’intégrale
+                                numérique comme les rectangles, trapèzes, Simpson et Monte Carlo, en
+                                étudiant leurs erreurs de convergence. Nous avons ensuite appliqué ces
+                                méthodes à des signaux mesurés et à l’étude d’un canal radio, avec
+                                calcul de puissance, bande occupée et lissage des données.
+                            </p>
+
+                            <h4 class="card__subtitle">Résultat</h4>
+                            <p class="card__text">
+                                Le projet m’a permis de mieux comprendre le lien entre théorie des
+                                télécommunications, calculs mathématiques et résultats expérimentaux,
+                                tout en gagnant en aisance sur MATLAB.
+                            </p>
+
+                            <!--<a href="#" class="card__link">Consulter le rapport du projet</a>-->
+                        </div>
+                    </article>
+
+                    <!-- PROJET 4 : Simulation besoin d'entreprise -->
+                    <article class="card projects__card">
+                        <div class="card__image-wrapper">
+                            <img src="images/js.png"
+                                alt="Backend de site de support informatique en Node.js"
+                                class="card__image">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Simulation de besoin d’entreprise</h3>
+                            <p class="card__tag">BACKEND · NODE.JS · MONGODB</p>
+
+                            <h4 class="card__subtitle">Objectif</h4>
+                            <p class="card__text">
+                                Répondre au besoin d’une entreprise fictive en développant la partie
+                                backend d’un site de support informatique, avec gestion de tickets.
+                            </p>
+
+                            <h4 class="card__subtitle">Déroulé</h4>
+                            <p class="card__text">
+                                Le frontend était fourni, j’ai donc travaillé sur le backend avec Node.js,
+                                Express et une base de données MongoDB. J’ai mis en place un serveur,
+                                créé des routes pour recevoir et enregistrer les tickets, géré les
+                                problèmes de CORS en configurant les bons en-têtes HTTP, puis séparé la
+                                logique dans des contrôleurs pour garder un code plus clair et maintenable.
+                            </p>
+
+                            <h4 class="card__subtitle">Résultat</h4>
+                            <p class="card__text">
+                                Le site permet de créer et de stocker les tickets côté serveur. Ce projet
+                                m’a montré concrètement le fonctionnement d’un backend moderne et des
+                                échanges entre client, serveur et base de données.
+                            </p>
+
+                           <!--<a href="#" class="card__link">Voir la documentation technique</a>--> 
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <button class="projects__arrow projects__arrow--next" aria-label="Projet suivant">
+                ›
+            </button>
+
+            <div class="projects__fade projects__fade--right"></div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- DIVERS -->
+    <section id="divers" class="section">
+        <div class="container">
+            <header class="section__header">
+                <h2 class="section__title">Divers</h2>
+                <p class="section__subtitle">
+                    Activités qui m'aident à garder l'équilibre et nourrissent ma curiosité.
+                </p>
+            </header>
+
+            <div class="grid grid--two grid--four-on-desktop hobbies">
+                <article class="card card--hobby">
+                    <div class="card__image-wrapper">
+                        <img src="images/bandlab.png" alt="Musique" class="card__image">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Musique</h3>
+                        <p class="card__text">
+                            Je compose et mixe des morceaux sur ordinateur. La musique me permet de travailler la
+                            créativité, la patience et le sens du détail, qualités qui me servent aussi en informatique.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card card--hobby">
+                    <div class="card__image-wrapper">
+                        <img src="images/requin.jpg" alt="Plongée" class="card__image">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Plongée</h3>
+                        <p class="card__text">
+                            Passionné par le monde sous marin, j'apprécie la plongée pour le calme et la rigueur que
+                            cette activité demande, avec un vrai respect des consignes de sécurité.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card card--hobby">
+                    <div class="card__image-wrapper">
+                        <img src="images/ski.jpg" alt="Ski" class="card__image">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Ski</h3>
+                        <p class="card__text">
+                            Le ski associe technique, prise de décision rapide et contrôle de soi, des qualités que
+                            je retrouve dans la gestion de situations imprévues en informatique.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card card--hobby">
+                    <div class="card__image-wrapper">
+                        <img src="images/geo.jpg" alt="Géopolitique" class="card__image">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Géopolitique</h3>
+                        <p class="card__text">
+                            Je suis l'actualité internationale depuis plusieurs années. Cela développe mon esprit
+                            critique et ma capacité à analyser les enjeux globaux, y compris liés au numérique.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="section section--alt">
+        <div class="container">
+            <header class="section__header">
+                <h2 class="section__title">CV</h2>
+                <p class="section__subtitle">
+                    Retrouvez l'ensemble de mon parcours sous un format synthétique.
+                </p>
+            </header>
+
+            <div class="cv">
+                <p class="cv__text">
+                    Mon CV est disponible en version PDF. Vous pouvez le télécharger ou l'afficher en ligne.
+                </p>
+                <div class="cv__actions">
+                    <!-- Remplace les liens href par ton vrai fichier -->
+                    <a href="images/CV_Ethan_SABATIER.pdf" class="btn btn--primary" target="_blank" rel="noreferrer" download="CV_Ethan_SABATIER.pdf">
+                        Télécharger le CV
+                    </a>
+                    <a href="images/CV_Ethan_SABATIER.pdf" class="btn btn--ghost" target="_blank" rel="noreferrer">
+                        Voir en ligne
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT (ancre utilisée par le bouton de la section A propos) -->
+    <section id="contact" class="section section--small">
+        <div class="container contact">
+            <h2 class="section__title">Me contacter</h2>
+            <p class="section__subtitle">
+                Une opportunité de stage, une question sur mes projets ou juste envie d'échanger.
+            </p>
+            <div class="contact__info">
+                <a href="mailto:Ethan.SABATIER@etu.uca.fr" class="contact__link">
+                    Ethan.SABATIER@etu.uca.fr
+                </a>
+                <a href="tel:+33652857756" class="contact__link">
+                    +33 6 52 85 77 56
+                </a>
+                <a href="https://www.linkedin.com/in/ethan-sabatier-065756345" target="_blank" rel="noreferrer" class="contact__link">
+                    Profil LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <p>© <span id="year"></span> Ethan SABATIER. Tous droits réservés.</p>
+        <p class="footer__note">Portfolio réalisé en HTML, CSS et JavaScript.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
