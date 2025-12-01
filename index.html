@@ -476,31 +476,24 @@
                                 class="card__image">
                         </div>
                         <div class="card__body">
-                            <h3 class="card__title">Projet réseau pour petite entreprise</h3>
-                            <p class="card__tag">RÉSEAUX · PACKET TRACER</p>
+                            <h3 class="card__title">Projet Coffre Fort sur Android Studio</h3>
+                            <p class="card__tag">Programmation; Sécurité · Android Studio</p>
 
                             <h4 class="card__subtitle">Objectif</h4>
                             <p class="card__text">
-                                Concevoir et configurer un réseau d’entreprise de taille moyenne sur Cisco
-                                Packet Tracer dans un temps limité, en intégrant postes fixes, postes mobiles
-                                et services réseau essentiels.
+                                L’objectif de ce projet était de concevoir une application Android capable de stocker des données sensibles de façon sécurisée. Je devais mettre en place un système d’authentification robuste avec mot de passe chiffré et connexion biométrique, assurer une gestion fiable des fichiers dans une base de données locale et garantir une ergonomie simple pour l’utilisateur. Ce projet avait également pour but de renforcer mes compétences en développement mobile, en sécurité des applications et en architecture logicielle tout en appliquant des notions clés vues en cours comme le hachage, la persistance de données et la gestion du cycle de vie Android.
+                                
                             </p>
 
                             <h4 class="card__subtitle">Déroulé</h4>
                             <p class="card__text">
-                                J’ai commencé par placer les postes utilisateurs, les points d’accès WiFi
-                                pour téléphones et portables, puis un switch central. J’ai ajouté un serveur
-                                DHCP pour l’attribution automatique des adresses IP et un serveur DNS pour
-                                résoudre des noms de sites. Le routeur a ensuite été configuré avec la
-                                bonne adresse de passerelle. Enfin, j’ai testé la connectivité avec la
-                                commande <code>ping</code> et corrigé les erreurs de configuration.
+                                J’ai commencé par définir la structure de l’application autour d’un écran de connexion (LoginActivity) et d’un espace sécurisé (MainActivity). J’ai mis en place un stockage chiffré du mot de passe à l’aide de SHA-256 via une classe dédiée SecurityUtils. Une fois l’authentification fonctionnelle, j’ai ajouté la base SQLite pour enregistrer les fichiers et leurs métadonnées, puis intégré l’API BiometricPrompt pour permettre l’accès par empreinte digitale. Enfin, j’ai structuré l’interface et les interactions afin d’assurer une utilisation fluide. Tout au long du projet, j’ai effectué de nombreux tests, résolu des erreurs fréquentes (NullPointerException, configuration Gradle, accès à la base) et amélioré progressivement l’architecture du code.
+                                
                             </p>
 
                             <h4 class="card__subtitle">Résultat</h4>
                             <p class="card__text">
-                                Le réseau était entièrement fonctionnel. Ce projet m’a appris la minutie
-                                nécessaire en configuration réseau et l’importance du diagnostic lorsque
-                                la moindre erreur bloque tout le fonctionnement.
+                                Le projet aboutit à une application totalement fonctionnelle permettant de sécuriser des documents sensibles sur un smartphone Android. L’utilisateur peut créer un mot de passe maître, se connecter via biométrie, ajouter ou supprimer des fichiers stockés localement et profiter d’une interface claire. Le système de hachage garantit une protection robuste du mot de passe et la base SQLite assure une gestion fiable et persistante des données. Ce projet m’a permis d’acquérir des compétences concrètes en développement Android, en sécurité applicative et en conception de fonctionnalités critiques, tout en renforçant ma capacité à résoudre des problèmes techniques réels.
                             </p>
 
                             <!-- Tu pourras mettre un vrai lien plus tard -->
@@ -645,3 +638,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
