@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Portfolio Ethan SABATIER</title>
+    <meta name="description" content="Portfolio d'Ethan SABATIER, étudiant en Réseaux et Télécommunications, parcours cybersécurité.">
+    
+    <link rel="icon" type="image/png" href="images/portfolio.png"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q85MC2BFF8"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-Q85MC2BFF8');
     </script>
-    <meta charset="UTF-8">
-    <title>Portfolio Ethan SABATIER</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio d'Ethan SABATIER, étudiant en Réseaux et Télécommunications, parcours cybersécurité.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -54,16 +58,15 @@
                 <p class="hero__eyebrow">Etudiant en Réseaux et Télécommunications parcours Cybersécurité</p>
                 <p class="hero__subtitle">
                     Ma formation en Réseaux et Télécommunications à l’IUT Clermont Auvergne s’appuie sur beaucoup de travaux pratiques et de projets concrets.
-                    En parallèle, mon emploi étudiant chez Fresh et mon Brevet d’Initiation Aéronautique m’ont appris à gérer des contraintes horaires fortes, à rester réactif en situation de stress et à garder un haut niveau d’exigence dans ce que je fais.
-                    Je recherche un <u>stage</u> et une alternance (année prochaine) qui me permettront de mettre à profit cette rigueur dans des projets réseau et cybersécurité réels. 
+                    En parallèle, mon emploi étudiant chez Fresh et mon Brevet d’Initiation Aéronautique m’ont appris à gérer des contraintes horaires fortes, à rester réactif en situation de stress et à garder un haut niveau d’exigence dans ce que je fais. 
                 </p>
                 <div class="hero__actions">
                     <a href="#projets" class="btn btn--primary">Voir mes projets</a>
                     <a href="#contact" class="btn btn--ghost">Me contacter</a>
                 </div>
                 <ul class="hero__infos">
-                    <li>Basé à Montbrison(42) / Clermont-Ferrand</li>
-                    <li>Recherche un stage de 10 semaines (Avril à Juin) en 2026</li>
+                    <li>Basé à Montbrison(42) / Clermont-Ferrand(63)</li>
+                    <li>J'ai réalisé un stage de 10 semaines (Avril à Juin) en 2026, au sein de la DSI de l'Université de Clermont-Ferrand</li>
                     <li>Centres d'intérêt réseau, cybersécurité, musique et ski.</li>
                 </ul>
             </div>
@@ -150,12 +153,32 @@
         <div class="projects">
             <div class="projects__fade projects__fade--left"></div>
 
-            <button class="projects__arrow projects__arrow--prev" aria-label="Expérience précédente">
-                ‹
-            </button>
-
             <div class="projects__viewport">
+                    <button class="projects__arrow projects__arrow--prev" aria-label="Expérience précédente">‹</button>
+                    <button class="projects__arrow projects__arrow--next" aria-label="Expérience suivante">›</button>
                 <div class="projects__track">
+
+                    <article class="card projects__card">
+                        <div class="card__body">
+                            <h3 class="card__title">Stagiaire en Cybersécurité, DSI de l'UCA</h3>
+                            <p class="card__tag">STAGE · CYBERSÉCURITÉ · PYTHON</p>
+
+                            <h4 class="card__subtitle">Objectif</h4>
+                            <p class="card__text">
+                                Renforcer la posture de sécurité de l'Institut de Chimie de Clermont-Ferrand (ICCF) en déployant une sonde de vulnérabilités automatisée et en cartographiant son infrastructure réseau complexe.
+                            </p>
+
+                            <h4 class="card__subtitle">Déroulé</h4>
+                            <p class="card__text">
+                                Intégré à la Cellule de Sécurité Opérationnelle (CSO), j'ai configuré et sécurisé une sonde matérielle sous Ubuntu, dont le déploiement a été entièrement automatisé via Ansible. J'ai ensuite mené des campagnes de scans asynchrones (via Greenbone) sur plus de 15 sous-réseaux et près de 200 machines, en veillant à ne pas perturber les équipements de recherche scientifique. Face au volume massif d'alertes générées et aux nombreux faux positifs liés au "backporting" des systèmes Linux, j'ai conçu et développé deux applications fenêtrées en Python. La première a permis un filtrage intelligent des failles, et la seconde a servi de base de connaissances (CVE) couplée à l'inventaire GLPI du parc informatique.
+                            </p>
+
+                            <h4 class="card__subtitle">Résultat</h4>
+                            <p class="card__text">
+                                Scan complet du réseau de l'ICCF et livraison d'une matrice de remédiation ciblée aux équipes de proximité. Cette expérience a consolidé mes compétences en cybersécurité, administration Linux, en automatisation logicielle, et m'a appris à concilier les exigences strictes de la sécurité avec les impératifs de production des utilisateurs.
+                            </p>
+                        </div>
+                    </article>
                     
                     <article class="card projects__card">
                         <div class="card__body">
@@ -210,14 +233,10 @@
                         </div>
                     </article>
 
-
-                    
                 </div>
             </div>
 
-            <button class="projects__arrow projects__arrow--next" aria-label="Expérience suivante">
-                ›
-            </button>
+            
 
             <div class="projects__fade projects__fade--right"></div>
         </div>
@@ -284,22 +303,15 @@
                         <li>Curieux</li>
                         <li>Autonome</li>
                         <li>Organisation du travail</li>
+                        <li>Capacité d'analyse</li>
+                        <li>Pédagogie</li>
+                        <li>Diplomatie</li>
                     </ul>
                     <p class="skills__text">
-                        Ces qualités se sont construites au fil de mes expériences. La discipline vient notamment de ma
-                        préparation au baccalauréat, où j’ai mis en place un planning de travail strict avec plusieurs
-                        heures de mathématiques et de physique par jour pour rattraper mon retard. Elle a ensuite été
-                        renforcée par mon emploi chez Fresh à Montbrison, où je me lève tous les dimanches à 6 heures,
-                        sans retard, tout en gérant en parallèle ma charge de travail à l’IUT.
+                        Ces qualités se sont construites au fil de mes expériences. La discipline vient notamment de ma préparation au baccalauréat, où j’ai mis en place un planning de travail strict pour rattraper mon retard, renforcée ensuite par mon emploi chez Fresh avec des horaires très matinaux.
                         <br><br>
-                        Ma réactivité et mon sang froid se sont développés lors du passage du Brevet d’Initiation
-                        Aéronautique, en étant aux commandes d’un avion sous la supervision d’un instructeur, mais aussi
-                        dans des situations du quotidien où il faut garder le contrôle face à des imprévus. Enfin,
-                        l’autonomie et la curiosité se sont exprimées dans mes projets personnels, comme la création de
-                        ce portfolio, d’un site web d’anniversaire complet ou encore la mise en place d’un backend en
-                        Node.js et MongoDB pour répondre à un besoin d’entreprise fictive.
+                        Ma réactivité et mon sang-froid se sont développés lors de l'obtention de mon Brevet d’Initiation Aéronautique. Enfin, mon stage à la DSI de l'Université a permis de développer ma capacité d'analyse et mon sens de la communication : j'ai appris à faire preuve de pédagogie et de diplomatie pour accompagner les utilisateurs dans le changement, tout en trouvant les bons compromis entre une sécurité informatique stricte et le maintien en conditions opérationnelles des laboratoires.
                     </p>
-
                 </article>
             </div>
         </div>
@@ -318,12 +330,41 @@
         <div class="projects">
             <div class="projects__fade projects__fade--left"></div>
 
-            <button class="projects__arrow projects__arrow--prev" aria-label="Projet précédent">
-                ‹
-            </button>
-
             <div class="projects__viewport">
+                <button class="projects__arrow projects__arrow--prev" aria-label="Projet précédent">
+                    ‹
+                </button>
+                <button class="projects__arrow projects__arrow--next" aria-label="Projet suivant">
+                    ›
+                </button>
                 <div class="projects__track">
+
+                    <article class="card projects__card">
+                        <div class="card__image-wrapper">
+                            <img src="images/firewall.png"
+                                alt="Interface de configuration d'un pare-feu Stormshield"
+                                class="card__image">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Architecture et sécurisation réseau (Stormshield)</h3>
+                            <p class="card__tag">RÉSEAU · STORMSHIELD · DMZ · FILTRAGE</p>
+
+                            <h4 class="card__subtitle">Objectif</h4>
+                            <p class="card__text">
+                                Concevoir et sécuriser l'infrastructure complète d'une entreprise virtuelle en binôme, sur une période de plusieurs mois. Le but était d'isoler un réseau utilisateur d'une zone démilitarisée (DMZ) hébergeant les services critiques (Web, Mail, FTP), en utilisant un pare-feu matériel Stormshield comme cœur de réseau.
+                            </p>
+
+                            <h4 class="card__subtitle">Déroulé</h4>
+                            <p class="card__text">
+                                La configuration s'est articulée autour du pare-feu Stormshield avec une approche de sécurité granulaire. Côté LAN, nous avons implémenté des règles strictes : blocage de zones géographiques, filtrage d'URL, et inspection des paquets HTTPS (déchiffrement SSL) pour analyser le trafic chiffré. Le trafic HTTP non sécurisé a été proscrit, et un portail captif a été déployé pour gérer l'authentification du réseau invité. Nous avons également sécurisé les requêtes de résolution de noms en forçant l'utilisation exclusive du serveur DNS de la DMZ, avec une redirection transparente pour les flux rebelles. Côté DMZ, le trafic SMTP a été filtré pour bloquer les attaques ciblant la messagerie, et nous avons configuré des règles de NAT (translation d'adresses) pour publier notre serveur Web interne de manière sécurisée via l'IP publique du pare-feu.
+                            </p>
+
+                            <h4 class="card__subtitle">Résultat</h4>
+                            <p class="card__text">
+                                Mise en production d'une infrastructure d'entreprise hautement sécurisée et fonctionnelle. Ce projet au long cours a confirmé mon aptitude à travailler en équipe sur des architectures complexes, ainsi que ma capacité à administrer des politiques de sécurité avancées sur des équipements professionnels de pointe.
+                            </p>
+                        </div>
+                    </article>
                     
                     <article class="card projects__card">
                         <div class="card__image-wrapper">
@@ -368,45 +409,34 @@
                             <!--<a href="#" class="card__link">Voir le compte rendu du projet</a>-->
                         </div>
                     </article>
-
                     
                     <article class="card projects__card">
                         <div class="card__image-wrapper">
-                            <img src="images/html.png"
-                                alt="Portfolio web en HTML, CSS et JavaScript"
+                            <img src="images/extrait_rapport_pentest.jpg"
+                                alt="Terminal Kali Linux et outils de pentest"
                                 class="card__image">
                         </div>
                         <div class="card__body">
-                            <h3 class="card__title">Création de mon portfolio web</h3>
-                            <p class="card__tag">DÉVELOPPEMENT WEB · HTML CSS JS</p>
+                            <h3 class="card__title">Projet d'initiation au Pentest</h3>
+                            <p class="card__tag">CYBERSÉCURITÉ · KALI LINUX · METASPLOIT</p>
 
                             <h4 class="card__subtitle">Objectif</h4>
                             <p class="card__text">
-                                Concevoir un portfolio complet, responsive et agréable à lire afin de
-                                présenter mon parcours, mes compétences et mes projets, en autonomie.
+                                Mener un audit de sécurité pratique sur 5 machines virtuelles (Windows et Linux) de difficulté progressive, et documenter précisément les vecteurs d'attaque et les méthodes d'élévation de privilèges dans un rapport technique complet.
                             </p>
 
                             <h4 class="card__subtitle">Déroulé</h4>
                             <p class="card__text">
-                                J’ai d’abord structuré les pages en HTML, puis travaillé la mise en forme
-                                en CSS. J’ai abandonné les unités en pixels pour utiliser des unités
-                                relatives comme <code>vh</code> et <code>vw</code>, afin d’adapter
-                                l’affichage aux différentes tailles d’écran. J’ai aussi intégré du
-                                JavaScript pour gérer la navigation entre sections et simuler des
-                                fenêtres modales plutôt que créer plusieurs fichiers HTML.
+                                Depuis une machine Kali Linux, notre méthodologie débutait par une phase de reconnaissance globale avec <code>nmap</code>. S'il y avait un serveur web, nous procédions à l'énumération des répertoires (Gobuster, Dirbuster), au test d'identifiants par défaut et à l'analyse des versions des autres services exposés. Sur l'une des machines, j'ai exploité une vulnérabilité d'upload sur un site web : au lieu d'une image, le serveur acceptait l'exécution de fichiers malveillants. J'ai donc généré un payload avec <code>msfvenom</code> pour obtenir un reverse shell. L'élévation de privilèges a ensuite été réalisée en détournant le binaire <code>unzip</code> qui possédait des droits administrateur (SUID), en lui passant des instructions spécifiques pour obtenir un shell root.
                             </p>
 
                             <h4 class="card__subtitle">Résultat</h4>
                             <p class="card__text">
-                                Le portfolio a renforcé mes compétences en HTML, CSS et JavaScript et
-                                montre concrètement ma capacité à mener un projet web de bout en bout.
+                                Compromission réussie des 5 machines et rédaction d'un rapport d'audit expliquant le "comment" mais surtout le "pourquoi" des vulnérabilités. Ce projet m'a permis de structurer ma méthodologie d'attaque et de consolider ma maîtrise des outils offensifs standards. 
                             </p>
-
-                            <!--<a href="#" class="card__link">Voir la version en ligne</a>-->
                         </div>
                     </article>
 
-                    
                     <article class="card projects__card">
                         <div class="card__image-wrapper">
                             <img src="images/mat.png"
@@ -517,9 +547,7 @@
                 </div>
             </div>
 
-            <button class="projects__arrow projects__arrow--next" aria-label="Projet suivant">
-                ›
-            </button>
+            
 
             <div class="projects__fade projects__fade--right"></div>
         </div>
@@ -559,9 +587,9 @@
                     <div class="card__body">
                         <h3 class="card__title">Plongée</h3>
                         <p class="card__text">
-                            Passionné par le monde sous marin, j'apprécie la plongée pour le calme et la rigueur que
-                            cette activité demande, avec un vrai respect des consignes de sécurité. J'ai, de plus, 
-                            en ma possession le niveau 1 de plongé me permettant de descendre jusqu'à 15 mètres. 
+                            Passionné par le monde sous-marin, j'apprécie la plongée pour le calme et la rigueur que
+                            cette activité demande, avec un vrai respect des consignes de sécurité, Mais surtout pour la beauté des fonds marins et la découverte permanente dans ce domaine. J'ai, de plus, 
+                            en ma possession le niveau 1 de plongée me permettant de descendre jusqu'à 15 mètres. 
                         </p>
                     </div>
                 </article>
@@ -574,23 +602,49 @@
                         <h3 class="card__title">Ski</h3>
                         <p class="card__text">
                             Le ski associe technique, prise de décision rapide et contrôle de soi, des qualités que
-                            je retrouve dans la gestion de situations imprévues en informatique.
+                            je retrouve dans la gestion de situations imprévues en informatique. De plus, ce sport procure à la fois de beaux paysages ainsi que l'aspect physique et intense, de par les vitesses. 
                         </p>
                     </div>
                 </article>
 
                 <article class="card card--hobby">
                     <div class="card__image-wrapper">
-                        <img src="images/geo.jpg" alt="Géopolitique" class="card__image">
+                        <img src="images/dozzle.png" alt="Interface d'un serveur personnel" class="card__image" loading="lazy">
                     </div>
                     <div class="card__body">
-                        <h3 class="card__title">Géopolitique</h3>
+                        <h3 class="card__title">Auto-hébergement</h3>
                         <p class="card__text">
-                            Je suis l'actualité internationale depuis plusieurs années. Cela développe mon esprit
-                            critique et ma capacité à analyser les enjeux globaux, y compris liés au numérique.
+                            Passionné par l'administration système, j'ai conçu et déployé un serveur personnel sous Docker pour être plus indépendant et intègre vis à vis de mes données, vie privées et des GAFAM notamment. J'orchestre et sécurise plusieurs conteneurs au quotidien, tels qu'Immich (photos), Nextcloud (fichiers), Vaultwarden (mots de passe) et Jellyfin (multimédia).
                         </p>
                     </div>
                 </article>
+
+                <article class="card card--hobby">
+                    <div class="card__image-wrapper">
+                        <img src="images/cockpit_avion.jpg" alt="Photo de l'intérieur d'un cockpit DR 400" class="card__image" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Aviation</h3>
+                        <p class="card__text">
+                            Depuis très jeune, je rêve de devenir pilote de chasse. Malheureusement, les conditions font que ce n'est plus réalisable aujourd'hui. Mais je n'ai pas perdu l'ambition, comme le prouve l'obtention du BIA en réalisant 2 vols d'une heure et la réalisation d'un saut en parachute en tandem. L'objectif est, par la suite, de décrocher le LAPL (Light Aircraft Pilot Licence) pour pouvoir voler et continuer mon rêve.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card card--hobby" style="background-color: #0f172a; border-color: #1e293b;">
+                    <div class="card__body" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                        <h3 class="card__title"
+                            style="color: #ef4444; font-family: monospace; font-size: 1.1rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px;">
+                            <span style="display: inline-block; width: 8px; height: 8px; background-color: #ef4444; border-radius: 50%; animation: pulse 2s infinite;"></span>
+                            Derniers CVE Publiés
+                        </h3>
+                        <div id="cve-data" style="font-family: monospace; font-size: 0.85rem; color: #94a3b8; line-height: 1.5; flex-grow: 1;">
+                            Initialisation de la sonde...<br>Connexion aux bases de données de vulnérabilités...
+                        </div>
+                        <p style="margin: 1rem 0 0; font-size: 0.75rem; color: #475569; font-family: monospace;">Source: CERT-FR (ANSSI)</p>
+                    </div>
+                </article>
+                
             </div>
         </div>
     </section>
@@ -599,7 +653,7 @@
     <section id="cv" class="section section--alt">
         <div class="container">
             <header class="section__header">
-                <h2 class="section__title">CV</h2>
+                <h2 class="section__title">Curriculum Vitae</h2>
                 <p class="section__subtitle">
                     Retrouvez l'ensemble de mon parcours sous un format synthétique.
                 </p>
@@ -627,7 +681,7 @@
         <div class="container contact">
             <h2 class="section__title">Me contacter</h2>
             <p class="section__subtitle">
-                Une opportunité de stage, une question sur mes projets ou juste envie d'échanger.
+                Une opportunité, une question sur mes projets ou juste envie d'échanger.
             </p>
             <div class="contact__info">
                 <a href="mailto:Ethan.SABATIER@etu.uca.fr" class="contact__link">
@@ -646,6 +700,7 @@
 
 <footer class="footer">
     <div class="container footer__inner">
+        
         <p>© <span id="year"></span> Ethan SABATIER. Tous droits réservés.</p>
         <p class="footer__note">Portfolio réalisé en HTML, CSS et JavaScript.</p>
     </div>
