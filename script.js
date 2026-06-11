@@ -134,7 +134,7 @@ const cveData = document.getElementById('cve-data');
 
 if (cveData) {
     // RENTRE ICI L'URL DE TON WORKER DEPLOYÉ
-    const workerUrl = 'https://api-cert-fr.ethan-sabatier.me';
+    const workerUrl = 'https://api-cert-fr.ethan-sabatier.me/';
 
     fetch(workerUrl)
         .then(response => response.text()) // On récupère la réponse sous forme de chaîne de caractères
