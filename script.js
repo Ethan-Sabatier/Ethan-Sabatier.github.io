@@ -146,7 +146,7 @@ if (cveData) {
                 let alertsHtml = '';
                 
                 // On transforme la NodeList en tableau pour pouvoir l'isoler aux 4 premiers éléments
-                const latestThreats = Array.from(items).reverse().slice(0, 4);
+                const latestThreats = Array.from(items).reverse().slice(0, 5);
 
                 latestThreats.forEach(item => {
                     // Extraction des données textuelles du XML
