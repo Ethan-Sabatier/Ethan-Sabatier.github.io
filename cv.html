@@ -12,12 +12,17 @@
             align-items: center; 
             min-height: 100vh;
             background-color: #f4f4f4; 
+            overflow: hidden; /* Empêche l'apparition des barres de défilement */
         }
 
         img {
-            max-width: 100%;  
-            height: auto;  
-            display: block; 
+            max-height: 95vh; 
+            max-width: 95vw;  
+            height: auto;
+            width: auto;
+            object-fit: contain;
+            display: block;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Ombre légère pour faire ressortir la feuille */
         }
     </style>
 </head>
